@@ -11,6 +11,15 @@ EasyModels is an easy way to find and view deep learning projects and pre-traine
 
 I wrote this is literally 45 minutes and pushed out and since then there have been little one line fixes and features added here and there. If you find any bugs please open an Issue thread on this repo.
 
+## Categories
+
+- Computer Vision
+- Natual Language Recognition
+- Audio and Speech
+- Generative Models
+- Reinforcement Learning
+- Unsupervised Learning
+
 # License
 
 I, Max Bridgland, hereby allow all human beings to use this project and distribute it inside their own projects with due credit. Due credit being my name and this repo's URL posted somewhere that ALL users will see by default. Enjoy :P
