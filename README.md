@@ -1,6 +1,10 @@
 # EasyModels
 Easily find and view pre-trained AI models through the command line
 
+<p align="center">
+  <img src="https://mbcdn.sfo2.digitaloceanspaces.com/easymodels.gif.gif">
+</p>
+
 # How it works
 
 
