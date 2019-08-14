@@ -2,7 +2,7 @@
 Easily find and view pre-trained AI models through the command line
 
 <p align="center">
-  <img src="https://mbcdn.sfo2.digitaloceanspaces.com/easymodels.gif.gif">
+  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif.gif">
 </p>
 
 # How it works
