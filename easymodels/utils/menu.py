@@ -16,7 +16,7 @@ class Menu:
         while True:
             print("""\
     \n\n
-    EasyModels v1.0\n
+    EasyModels v1.3\n
     \tEasyModels is a tool to quickly, and easily find pre-trained AI
     \tmodels for your project. It uses the modelzoo.co API and offers
     \tinformation about the pre-trained models in an easy to view way.
@@ -47,5 +47,5 @@ class Menu:
                             except:
                                 print(Categories.create_table_from_category_info(category_info))
                                 print('\nInvalid Option! Please choose an ID # from the table above!\n')
-                print('\n' * 20)
+                sys.stdout.flush()
     

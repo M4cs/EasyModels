@@ -9,7 +9,7 @@ def readme():
     
 setuptools.setup(
     name="EasyModels",
-    version="1.1",
+    version="1.3",
     author="Max Bridgland",
     install_requires=[
         'requests==2.21.0',
@@ -24,7 +24,7 @@ setuptools.setup(
             'easymodels = easymodels.__main__:start'
         ]
     },
-    keywords="AI tensorflow models training pre-train pre-trained artifical intelligence keras YOLO opencv pytorch chainer",
+    keywords="AI, tensorflow, models, training, pre-train, pre-trained, artifical intelligence, keras, YOLO, opencv, pytorch, chainer, easymodels, ezmodels",
     url="https://github.com/M4cs/EasyModels",
     packages=setuptools.find_packages(),
     classifiers=(
