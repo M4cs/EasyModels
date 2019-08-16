@@ -1,8 +1,14 @@
 import requests, time
 from easymodels.utils import *
+import argparse
 import sys
 
-__version__ = "1.3.1"
+parser = argparse.ArgumentParser()
+parser.add_argument('-g', '--gui', help='Start with GUI rather than CLI', action='store_true')
+args = parser.parse_args()
+    
+
+__version__ = "1.4"
 
 def start():
     sys.stdout.flush()
@@ -13,6 +19,8 @@ def start():
         time.sleep(1)
     else:
         print('All Up To Date! Starting EasyModels CLI')
+    if args.gui:
+        GUI.gui()
     Menu.main()
 
 if __name__ == "__main__":
