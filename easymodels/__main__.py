@@ -8,14 +8,14 @@ parser.add_argument('-g', '--gui', help='Start with GUI rather than CLI', action
 args = parser.parse_args()
     
 
-__version__ = "1.4"
+__version__ = "1.4.1"
 
 def start():
     sys.stdout.flush()
     print('Checking For Updates...')
     r = requests.get('https://raw.githubusercontent.com/M4cs/EasyModels/master/version.txt').text.replace('\n', '').replace('\r', '')
     if r != __version__:
-        print('Update Available Please Run "pip install easymodules --upgrade --no-cache-dir" to update to the latest version!')
+        print('Update Available Please Run "pip install easymodels --upgrade --no-cache-dir" to update to the latest version!')
         time.sleep(1)
     else:
         print('All Up To Date! Starting EasyModels CLI')
