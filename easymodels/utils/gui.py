@@ -28,9 +28,9 @@ class GUI:
                 frameworks.append('null')
         for x in range(len(titles)):
             if (count % 2) != 0:
-                col1.append([g.Button(titles[x] + ' | ' + frameworks[x], key=links[x])])
+                col1.append([g.Button(titles[x] + ' | ' + frameworks[x], key='https://github.com/' + links[x])])
             else:
-                col2.append([g.Button(titles[x] + ' | ' + frameworks[x], key=links[x])])
+                col2.append([g.Button(titles[x] + ' | ' + frameworks[x], key='https://github.com/' + links[x])])
             count += 1
         
         return col1, col2
