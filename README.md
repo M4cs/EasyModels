@@ -2,7 +2,10 @@
 Easily find and view pre-trained AI models through the command line
 
 <p align="center">
-  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif.gif">
+  <h1>Command Line</h1>
+  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif">
+  <h1>GUI</h1>
+  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels-gui.gif">
 </p>
 
 # What EasyModels does
@@ -40,6 +43,9 @@ or clone this repo and run:
 ```
 python setup.py install
 easymodels
+
+# for gui run
+easymodels --gui
 ```
 
 This will bring up a command line tool that will guide you through grabbing whatever models are available through the modelzoo API.
