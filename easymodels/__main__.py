@@ -1,10 +1,8 @@
 import requests, time
 from easymodels.utils import *
-from configparser import ConfigParser
 import argparse
 import sys
 import os
-import pydux
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-gd', '--gui-dark', help='Start with GUI in Dark Mode and Set To Default', action='store_true')
@@ -12,7 +10,7 @@ parser.add_argument('-g', '--gui', help='Start with GUI in Light Mode and Set To
 args = parser.parse_args()
     
 
-__version__ = "1.5"
+__version__ = "1.5.1"
 
 def create_config():
     with open('config.ini', 'w') as f:
