@@ -16,7 +16,7 @@ class Menu:
         while True:
             print("""\
     \n\n
-    EasyModels v1.4.7\n
+    EasyModels v1.5\n
     \tEasyModels is a tool to quickly, and easily find pre-trained AI
     \tmodels for your project. It uses the modelzoo.co API and offers
     \tinformation about the pre-trained models in an easy to view way.

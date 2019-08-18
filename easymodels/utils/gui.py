@@ -35,13 +35,27 @@ class GUI:
         
         return col1, col2
     
-    def gui():
+    def gui(dark=False):
         if 'win' in sys.platform:
             titlebar = True
         else:
             titlebar = False
-        g.SetOptions(background_color='white', input_elements_background_color='#474747', button_color=('black', '#ededed'),
-                     text_color='black', text_element_background_color='white', border_width=0, input_text_color='black',
+        if dark:
+            background_color="#262626"
+            input_elements_background_color="#262626"
+            button_color=('white', '#171717')
+            text_color="white"
+            text_element_background_color="#262626"
+            input_text_color="white"
+        else:
+            background_color='white'
+            input_elements_background_color='#474747'
+            button_color=('black', 'white')
+            text_color='black'
+            text_element_background_color='white'
+            input_text_color='black'
+        g.SetOptions(background_color=background_color, input_elements_background_color=input_elements_background_color, button_color=button_color,
+                     text_color=text_color, text_element_background_color=text_element_background_color, border_width=0, input_text_color=input_text_color,
                      auto_size_buttons=True, auto_size_text=True)
         layout = [
             [g.T('EasyModels', font=('Arial', 15))],

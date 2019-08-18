@@ -9,7 +9,7 @@ def readme():
     
 setuptools.setup(
     name="EasyModels",
-    version="1.4.7",
+    version="1.5",
     author="Max Bridgland",
     install_requires=[
         'requests==2.21.0',
