@@ -1,0 +1,15 @@
+README.md
+setup.py
+EasyModels.egg-info/PKG-INFO
+EasyModels.egg-info/SOURCES.txt
+EasyModels.egg-info/dependency_links.txt
+EasyModels.egg-info/entry_points.txt
+EasyModels.egg-info/requires.txt
+EasyModels.egg-info/top_level.txt
+easymodels/__init__.py
+easymodels/__main__.py
+easymodels/utils/__init__.py
+easymodels/utils/categories.py
+easymodels/utils/constants.py
+easymodels/utils/gui.py
+easymodels/utils/menu.py

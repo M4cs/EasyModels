@@ -1,0 +1,3 @@
+[console_scripts]
+easymodels = easymodels.__main__:start
+
