@@ -1,4 +1,4 @@
-import PySimpleGUI as g
+import PySimpleGUIQt as g
 import sys
 from easymodels.utils import Categories
 from webbrowser import open_new_tab

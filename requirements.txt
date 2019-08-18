@@ -1,3 +1,4 @@
 requests==2.21.0
 terminaltables==3.1.0
-PySimpleGUI==4.1.0
+PySimpleGUIQt==4.1.0
+PySide2
