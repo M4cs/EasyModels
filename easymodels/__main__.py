@@ -8,7 +8,7 @@ parser.add_argument('-g', '--gui', help='Start with GUI rather than CLI', action
 args = parser.parse_args()
     
 
-__version__ = "1.4.6"
+__version__ = "1.4.7"
 
 def start():
     sys.stdout.flush()
