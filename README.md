@@ -1,11 +1,15 @@
-# EasyModels
-Easily find and view pre-trained AI models through the command line
-
+<h1 align="center">EasyModels</h1>
 <p align="center">
-  <h1>Command Line</h1>
-  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif">
-  <h1>GUI</h1>
-  <img src="https://github.com/M4cs/EasyModels/raw/master/easymodels-gui.gif">
+  <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
+  </br>
+  <img src="https://pepy.tech/badge/easymodels" />
+  <img src="https://pepy.tech/badge/easymodels/week" />
+  <img src="https://pepy.tech/badge/easymodels/month" />
+  </br>Easily find and view pre-trained AI models through the command line
+  <h1 align="center">Command Line</h1>
+  <p align="center"><img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif" /></p>
+  <h1 align="center">GUI</h1>
+  <p align="center"><img src="https://github.com/M4cs/EasyModels/raw/master/easymodels-gui.gif" /></p>
 </p>
 
 # What EasyModels does
