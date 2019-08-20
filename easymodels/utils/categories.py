@@ -22,14 +22,17 @@ class Categories:
         return full_dict
     
     @staticmethod
-    def categories_to_table():
+    def categories_to_table(colors):
         categories = {'computer-vision': {'id': 1, 'slug': 'computer-vision', 'title': 'Computer Vision', 'short_title': 'CV', 'description': 'Computer Vision: Object detection, boundary labelling, segmentation.'}, 'natural-language-processing': {'id': 2, 'slug': 'natural-language-processing', 'title': 'Natural Language Processing', 'short_title': 'NLP', 'description': 'Natural Language Processing (NLP).'}, 'generative-models': {'id': 3, 'slug': 'generative-models', 'title': 'Generative Models', 'short_title': 'Generative', 'description': 'Generative Models, such as Generative Adversarial Networks (GANs), Variational Autoencoders (VAE), and more.'}, 'reinforcement-learning': {'id': 4, 'slug': 'reinforcement-learning', 'title': 'Reinforcement Learning', 'short_title': 'RL', 'description': 'Where an agent learn how to behave in a environment by performing actions and seeing the results.'}, 'unsupervised-learning': {'id': 5, 'slug': 'unsupervised-learning', 'title': 'Unsupervised Learning', 'short_title': 'Unsupervised', 'description': 'Unsupervised learning is a type of machine learning algorithm to draw inferences from datasets consisting of input data without labels.'}, 'audio-speech': {'id': 6, 'slug': 'audio-speech', 'title': 'Audio and Speech', 'short_title': 'Audio', 'description': 'Models and code that perform audio processing, speech synthesis, and other audio related tasks.'}}
         table_data = [
             ['ID#', 'Title', 'Description']
         ]
         count = 0
         for k, v in categories.items():
-            table_data.append([str(blue(str(count), bold=True)), str(green(str(v['title']), bold=True)), str(white(str(v['description'][0:100]), bold=True))])
+            if colors == True:
+                table_data.append([str(blue(str(count), bold=True)), str(green(str(v['title']), bold=True)), str(white(str(v['description'][0:100]), bold=True))])
+            else:
+                table_data.append([count, v['title'], v['description'][0:100]])
             count += 1
         table = AsciiTable(table_data, 'Categories')
         return table.table
@@ -43,7 +46,7 @@ class Categories:
             print('\nNo Link Available!\n')
     
     @staticmethod
-    def create_table_from_category_info(category_info):
+    def create_table_from_category_info(category_info, colors):
         titles = []
         descriptions = []
         links = []
@@ -71,7 +74,10 @@ class Categories:
             ['ID#', 'Title', 'Description', 'GitHub Link', 'Framework']
         ]
         while count <= (len(titles) - 1):
-            table_data.append([str(blue(str(count), bold=True)), str(blue(str(titles[count]), bold=True)), str(white(str(descriptions[count]), bold=True)), str(green(str(links[count]), bold=True)), str(yellow(str(frameworks[count]), bold=True))])
+            if colors == True:
+                table_data.append([str(blue(str(count), bold=True)), str(blue(str(titles[count]), bold=True)), str(white(str(descriptions[count]), bold=True)), str(green(str(links[count]), bold=True)), str(yellow(str(frameworks[count]), bold=True))])
+            else:
+                table_data.append([count, titles[count], descriptions[count], links[count], frameworks[count]])
             count += 1
         table = AsciiTable(table_data, 'Available Models')
         return table.table
