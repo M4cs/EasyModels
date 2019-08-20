@@ -47,6 +47,7 @@ or clone this repo and run:
 ```
 python setup.py install
 easymodels
+easymodels --disable-update # disable checking for newest version
 
 # for gui run
 easymodels --gui
