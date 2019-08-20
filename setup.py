@@ -9,13 +9,14 @@ def readme():
     
 setuptools.setup(
     name="EasyModels",
-    version="1.5.1",
+    version="1.6",
     author="Max Bridgland",
     install_requires=[
-        'requests==2.21.0',
-        'terminaltables==3.1.0',
-        'PySimpleGUIQt==0.26.0',
-        'PySide2==5.13.0'
+        'requests>=2.21.0',
+        'terminaltables>=3.1.0',
+        'PySimpleGUIQt>=0.26.0',
+        'PySide2>=5.13.0',
+        'crayons>=0.2.0'
     ],
     author_email="mabridgland@protonmail.com",
     description="Command Line User Interface for finding pre-trained AI models",

@@ -1,6 +1,6 @@
 from .categories import Categories
 import sys
-
+from crayons import *
 class Menu:
     
     @staticmethod
@@ -14,29 +14,29 @@ class Menu:
             '5': 'audio-speech'
         }
         while True:
-            print("""\
+            print(white("""\
     \n\n
-    EasyModels v1.5.1\n
+    EasyModels v1.6\n
     \tEasyModels is a tool to quickly, and easily find pre-trained AI
     \tmodels for your project. It uses the modelzoo.co API and offers
     \tinformation about the pre-trained models in an easy to view way.
 
-    Created By: @maxbridgland\n""")
+    Created By: @maxbridgland\n""", bold=True))
             print(Categories.categories_to_table())
-            print('\nPlease Choose A Category by ID # From Above To Find Models or Type "exit" to Exit the Program\n')
-            category_id = input('$easymodels~ ')
+            print(white('\nPlease Choose A Category by ID # From Above To Find Models or Type "exit" to Exit the Program\n', bold=True))
+            category_id = input(green('$easymodels~ ', bold=True))
             if category_id.lower() == 'exit':
                 sys.exit()
             else:
                 if not cat_to_id.get(category_id):
-                    print('\nInvalid Option! Please choose an ID # from the table above!\n')
+                    print(red('\nInvalid Option! Please choose an ID # from the table above!\n', bold=True))
                 else:
-                    print('\nGrabbing Models Based On Choice...\n')
+                    print(green('\nGrabbing Models Based On Choice...\n',bold=True))
                     category_info = Categories.get_category_info(cat_to_id[category_id])
                     print(Categories.create_table_from_category_info(category_info))
-                    print('\nPlease Choose A Project by ID # From Above To Find Models or Type "exit" to Exit the Program\n')
+                    print(white('\nPlease Choose A Project by ID # From Above To Find Models or Type "exit" to Exit the Program\n', bold=True))
                     while True:
-                        model_id = input('$easymodels~ ')
+                        model_id = input(green('$easymodels~ ', bold=True))
                         if model_id.lower() == "exit":
                             break
                         else:
@@ -46,6 +46,6 @@ class Menu:
                                 break
                             except:
                                 print(Categories.create_table_from_category_info(category_info))
-                                print('\nInvalid Option! Please choose an ID # from the table above!\n')
+                                print(red('\nInvalid Option! Please choose an ID # from the table above!\n', bold=True))
                 sys.stdout.flush()
     
