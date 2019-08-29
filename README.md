@@ -18,7 +18,6 @@ EasyModels is an easy way to find and view deep learning projects and pre-traine
 
 I wrote this is literally 45 minutes and pushed out and since then there have been little one line fixes and features added here and there. If you find any bugs please open an Issue thread on this repo.
 
-## GUI brought to you in part by [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) <img src="https://cdn.discordapp.com/emojis/575678912588283904.png?v=1" width="20px" />
 ## Categories
 
 - Computer Vision
