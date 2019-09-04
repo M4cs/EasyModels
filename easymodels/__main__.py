@@ -6,7 +6,7 @@ import os
 from crayons import *
     
 
-__version__ = "1.6.1"
+__version__ = "1.6.2"
 
 def create_config():
     with open('config.ini', 'w') as f:

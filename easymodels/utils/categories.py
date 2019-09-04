@@ -1,4 +1,5 @@
 import requests as r
+from tqdm import tqdm
 import json
 from terminaltables import AsciiTable
 from .constants import *
@@ -51,7 +52,7 @@ class Categories:
         descriptions = []
         links = []
         frameworks = []
-        for model in category_info['models']:
+        for model in tqdm(category_info['models']):
             if model.get('title'):
                 titles.append(model['title'][0:60])
             else:

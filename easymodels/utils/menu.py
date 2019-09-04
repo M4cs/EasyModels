@@ -1,5 +1,6 @@
 from .categories import Categories
 import sys
+from tqdm import tqdm
 from crayons import *
 class Menu:
     
@@ -17,7 +18,7 @@ class Menu:
             if colors == True:
                 print(white("""\
         \n\n
-        EasyModels v1.6.1\n
+        EasyModels v1.6.2\n
         \tEasyModels is a tool to quickly, and easily find pre-trained AI
         \tmodels for your project. It uses the modelzoo.co API and offers
         \tinformation about the pre-trained models in an easy to view way.
@@ -26,7 +27,7 @@ class Menu:
             else:
                 print("""\
         \n\n
-        EasyModels v1.6.1\n
+        EasyModels v1.6.2\n
         \tEasyModels is a tool to quickly, and easily find pre-trained AI
         \tmodels for your project. It uses the modelzoo.co API and offers
         \tinformation about the pre-trained models in an easy to view way.
