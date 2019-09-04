@@ -2,9 +2,9 @@
 <p align="center">
   <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
   </br>
-  <img src="https://pepy.tech/badge/easymodels" />
+  <a href="https://pepy.tech/project/easymodels" target="_blank"><img src="https://pepy.tech/badge/easymodels" />
   <img src="https://pepy.tech/badge/easymodels/week" />
-  <img src="https://pepy.tech/badge/easymodels/month" />
+  <img src="https://pepy.tech/badge/easymodels/month" /></a>
   </br>Easily find and view pre-trained AI models through the command line
   <h1 align="center">Command Line</h1>
   <p align="center"><img src="https://github.com/M4cs/EasyModels/raw/master/easymodels.gif" /></p>
